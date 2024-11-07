@@ -1,0 +1,482 @@
+* {
+  user-select: none; /* Prevents text selection */
+}
+.login-container,
+.login-container input,
+.login-container button {
+  user-select: none;
+}
+html,
+body {
+  overflow: hidden; /* Prevents scrolling */
+  touch-action: none; /* Disables touch scrolling */
+}
+
+.header-order {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  padding: 10px 10px;
+  width: 100%;
+}
+.header-order .order-title-container {
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-orders .tab-manual-custom {
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.chooseVoid div {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chooseVoid div.selected {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid #ccc;
+}
+
+.tab-item {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+
+.tab-text {
+  font-size: 20px;
+  margin-left: 5px;
+  transition: color 0.3s ease;
+}
+
+.tab-item.active {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #3370fe;
+}
+
+.tab-item.active .tab-icon {
+  color: #3370fe;
+}
+
+.tab-item.active .tab-text {
+  color: #3370fe;
+}
+
+.current-date-header {
+  display: flex;
+  width: 70%;
+  justify-content: end;
+}
+
+.calendar-date {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.calendar-date h3 {
+  font-size: 2rem;
+}
+
+.calendar-date i {
+  font-size: 2.5rem !important;
+  color: #000;
+}
+
+.end-shifter-btn button {
+  background-color: #004272;
+  color: #fff;
+  padding: 3px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 1.2rem;
+}
+.end-shifter-btn i {
+  color: #fff;
+}
+
+.menu-nav {
+  width: 10%;
+  margin-top: 20px;
+  border: 1px solid #a1c7ee;
+  border-top-right-radius: 35px;
+  max-height: 100vh;
+  height: 86vh;
+  overflow-y: auto;
+}
+
+.menu-nav-header {
+  text-align: center;
+  background-color: #a1c7ee;
+
+  padding: 15px;
+}
+
+.menu-categories-list .category {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  border-radius: 10px;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.menu-categories-list .category:hover {
+  background-color: beige;
+}
+
+.menu-categories-list .category.selected {
+  background-color: beige;
+}
+
+.menu-categories-list img {
+  margin-top: 5px;
+  height: 6rem;
+  width: 8rem;
+  border-radius: 5px;
+}
+
+.category h3 {
+  text-align: center;
+  margin: 10px;
+}
+
+.cashier-body {
+  display: flex;
+}
+
+.products-list-container {
+  margin-top: 40px;
+  margin-left: 20px;
+
+  width: 50%;
+  height: 80vh;
+  overflow-y: auto;
+}
+.products-lists {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.products-head {
+  display: flex;
+}
+.products-head h2 {
+  margin-right: 40px;
+}
+.products-head .input-group .search {
+  width: 20em;
+}
+
+.card-product {
+  width: 15em;
+  height: 19em;
+  border-radius: 5px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-product:hover {
+  cursor: pointer;
+}
+.card-product img {
+  width: 100%;
+  height: 68%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.card-content {
+  padding: 10px 0;
+}
+.product-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.price {
+  color: green;
+  font-weight: bold;
+}
+
+.ordering-container {
+  border: 1px solid #a1c7ee;
+  border-right: none;
+  margin-top: 30px;
+  width: 38%;
+
+  margin-left: 20px;
+}
+
+.btn-order-table-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.total-btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px 10px 0 10px;
+}
+.order-table-container button,
+.total-btn-container button {
+  width: 200px;
+}
+.order-checkout-container {
+  border-top: 1px solid #a1c7ee;
+}
+.total-container {
+  display: flex;
+  padding: 20px 40px 0px 40px;
+}
+.total-container .total-price {
+  flex: 1;
+}
+.header-order .title-container i {
+  font-size: 3.5em;
+  color: black;
+}
+
+.table-orders-container {
+  padding: 10px;
+  margin-top: 10px;
+}
+.table-orders-container table {
+  margin-top: 20px;
+}
+.table-orders-container table thead {
+  border-radius: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: #a1c7ee;
+}
+.table-orders-container table thead th {
+  padding: 10px;
+  font-size: 13px;
+  text-align: center;
+}
+.table-orders-container table tbody td {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+.table-orders-container table tbody td i {
+  position: relative;
+  top: 5px;
+}
+.order-num-container {
+  display: flex;
+  color: blue;
+}
+.order-num-container h2 {
+  flex: 1;
+  font-size: 2.8em;
+}
+.table-orders-container i:hover {
+  cursor: pointer;
+}
+.end-shift-container h3 {
+  margin: 0;
+  font-size: 2rem;
+}
+.end-shift-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.end-shift-container i {
+  font-size: 2.5rem !important;
+  color: #000;
+}
+.end-btn-container button {
+  background-color: #004272;
+  color: #fff;
+  padding: 3px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 1.2rem;
+}
+.end-date-container {
+  display: flex;
+  align-items: center;
+}
+.end-btn-container i {
+  color: #fff;
+}
+.end-modal-head {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.end-modal-head p {
+  font-size: 1.3rem;
+  color: black;
+}
+.start-time p {
+  margin-top: 7px;
+}
+.end-gray {
+  color: gray;
+}
+.end-modal-details h2 {
+  padding: 0 10px;
+  font-size: 1.8rem;
+}
+.end-details {
+  display: flex;
+  justify-content: space-between;
+}
+.end-details p {
+  padding: 0 10px;
+  color: #000;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.end-cc-btn {
+  background-color: #fff;
+  border: 1px solid blue;
+  color: blue;
+}
+.end-es-btn {
+  background-color: #2880bf;
+  border: none;
+  color: #fff;
+}
+.end-btn {
+  width: 90px;
+  height: 35px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+.end-modal-btn-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.void-transaction-container {
+  background-color: lightgray;
+  height: 100vh;
+}
+.void-custom-card {
+  padding: 1rem 3rem;
+}
+.transac-card {
+  height: calc(100vh - 60px);
+}
+.digit-pin-container {
+  padding: 1rem;
+}
+.digit-pin-container h3 {
+  margin-bottom: 10px;
+}
+.void-red {
+  color: red;
+}
+.void-modal-head {
+  display: flex;
+  justify-content: space-between;
+}
+.transac-void h2 {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: end;
+}
+.void-amount .v-amount {
+  color: #2880bf;
+  font-size: 1.9rem;
+  margin-top: 5px;
+}
+.void-amount-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.void-btn-container {
+  display: flex;
+  gap: 10px;
+}
+.void-btn {
+  padding: 4px 8px;
+  font-size: 1.3rem;
+}
+.void-c-btn {
+  background-color: #fff;
+  color: red;
+  border: 1px solid red;
+}
+.void-cf-btn {
+  background-color: red;
+  color: #fff;
+  border: none;
+}
+
+.shift-p {
+  color: gray;
+}
+.shift-expected-cash,
+.shift-actual-cash {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.--end-shift-btn {
+  color: #2880bf;
+}
+
+.ordering-extra-lists .order-extra-name {
+  padding-left: 2rem;
+  margin-bottom: 0.8rem;
+}
+.extra-specs {
+  font-size: 1.8rem;
+}
+.order-extra-sub {
+  padding-left: 3rem;
+  margin-bottom: 1rem;
+}
+.order-extra-lists {
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 1rem;
+}
+.order-extra-foot {
+  display: flex;
+  justify-content: space-between;
+}
+.extra-c-btn {
+  display: flex;
+  align-items: center;
+}
+.extra-subtotal h2 {
+  color: red;
+}
+.extra-c-btn button {
+  background: #2880bf;
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 0.8rem 3rem;
+  border: none;
+  border-radius: 5px;
+}

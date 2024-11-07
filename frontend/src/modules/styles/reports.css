@@ -1,0 +1,88 @@
+.report-title-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+.report-title-container h2 {
+  position: relative;
+  top: 5px;
+}
+.report-title-container i {
+  color: black;
+  font-size: 3em;
+}
+.report-title-container i :hover {
+  cursor: pointer;
+}
+.report-select {
+  height: 4rem;
+  width: 30rem;
+}
+.report-s-container {
+  gap: 1rem;
+}
+
+.nav-inven-reports {
+  border-bottom: 1px solid black;
+  margin: 20px 20px 0px 20px;
+}
+.nav-inven-reports h2 {
+  border-bottom: 1px solid black;
+  position: relative;
+  top: 6px;
+}
+.nav-inven-reports h2:hover {
+  cursor: pointer;
+  color: blue;
+  border-bottom: 1px solid blue;
+}
+.nav-inven-reports h2.active {
+  color: blue;
+  border-bottom: 1px solid blue;
+}
+
+.custom-datatable .p-paginator {
+  justify-content: flex-end;
+}
+
+.custom-datatable {
+  width: 100%;
+}
+
+.custom-datatable .p-datatable-thead > tr > th {
+  font-size: 14px;
+  background-color: #E1F0FF;
+  border-radius: 3px;
+  font-weight: 500;
+  border-bottom: none;
+}
+
+.custom-datatable .p-datatable-tbody > tr > td {
+  font-size: 14px;
+}
+
+.custom-datatable .p-dropdown {
+  width: 5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  height: 35px;
+}
+
+.pos-head-container{
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+
+.title-content-field{
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.search-container-field,
+.select-container-field{
+  width: 25%;
+  display: flex;
+  justify-content: end;
+}
