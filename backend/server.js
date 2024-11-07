@@ -1,62 +1,22 @@
 const express = require("express");
 const cors = require("cors");
-const https = require("https");
-const http = require("http");
-const fs = require("fs");
 const mysql = require("mysql");
 const bodyParser = require("body-parser");
-const cookieParser = require("cookie-parser");
 const app = express();
 const WebSocket = require("ws");
 const dotenv = require("dotenv");
-const hostname = "frontend.dualtechpos.com";
+dotenv.config();
 
-const privateKey = fs.readFileSync("/var/lib/jelastic/keys/privkey.pem");
-const certificate = fs.readFileSync("/var/lib/jelastic/keys/fullchain.pem");
-const credentials = { key: privateKey, cert: certificate };
-
-// Middleware setup
+const port = process.env.PORT || 8086;
+app.use(cors());
 app.use(express.json({ limit: "500mb" }));
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
-app.use(cookieParser());
-
-const frontendPath = "/home/jelastic/ROOT/frontend/build";
-app.use(express.static(frontendPath));
-
-app.post("/mssg", function (req, res) {
-  console.log(req.body);
-
-  res.redirect("/");
-});
-
-const backendPort = https
-  .createServer(credentials, app)
-  .listen(3443, function () {
-    console.log("HTTPS Server started at port 3443");
-  });
-
-// Create HTTPS server on port 3443
-https.createServer(credentials, app).listen(3000, function (req, res) {
-  console.log("Server stated at port 3000");
-});
-
-require("dotenv").config();
-
-// CORS setup
-const corsOptions = {
-  origin: ["https://dualtechpos.com:3000"],
-  methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
-  allowedHeaders: [
-    "Origin",
-    "X-Requested-With",
-    "Content-Type",
-    "Accept",
-    "Authorization",
-  ],
-  credentials: true,
-};
-app.use(cors(corsOptions));
+app.use(
+  bodyParser.urlencoded({
+    limit: "500mb",
+    extended: true,
+    parameterLimit: 100000,
+  })
+);
 
 //Routes:
 const activitylog = require("./routes/activity_log.route.js");
@@ -134,12 +94,8 @@ app.use("/kiosk_settings", kiosk_settings);
 app.use("/extraneed", extraneeding);
 app.use("/credits", Credit_Student_Meal);
 
-app.get("*", (req, res) => {
-  res.sendFile(frontendPath + "/index.html");
-});
-// WebSocket Server
-
-const wss = new WebSocket.Server({ server: backendPort });
+const server = require("http").createServer(app);
+const wss = new WebSocket.Server({ server });
 
 wss.on("connection", (ws, req) => {
   console.log("Client connected to WebSocket");
@@ -149,8 +105,7 @@ wss.on("connection", (ws, req) => {
     console.log("Received:", messageStr);
 
     // Determine if the message is from React
-    const isFromReactApp =
-      req.headers.origin === "https://dualtechpos.com:3000";
+    const isFromReactApp = req.headers.origin === "https://eli-pos.vercel.app";
 
     if (isFromReactApp) {
       console.log("Message from React app:", messageStr);
@@ -176,4 +131,8 @@ wss.on("connection", (ws, req) => {
   ws.on("close", () => {
     console.log("Client disconnected");
   });
+});
+
+server.listen(port, () => {
+  console.log(`Server is listening on port ${port}`);
 });

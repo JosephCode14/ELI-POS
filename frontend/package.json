@@ -48,10 +48,11 @@
     "zustand": "^4.5.2"
   },
   "scripts": {
-    "start": "export HTTPS=true SSL_CERT_FILE=/var/lib/jelastic/keys/fullchain.pem SSL_KEY_FILE=/var/lib/jelastic/keys/privkey.pem && HOST=dualtechpos.com react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
-    "proxy": "https://dualtechpos.com:3443",
-    "prod": "npm run build && serve -s build"
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "prod": "npm run-script build && serve build"
   },
   "eslintConfig": {
     "extends": [
