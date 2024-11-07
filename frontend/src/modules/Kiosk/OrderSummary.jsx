@@ -293,7 +293,7 @@ const OrderSummary = () => {
   const [UserName, setUserName] = useState("");
 
   useEffect(() => {
-    const newSocket = new WebSocket("wss://dualtechpos.com:3443");
+    const newSocket = new WebSocket("wss://eli-pos.onrender.com");
 
     newSocket.onopen = () => {
       console.log("Connected to WebSocket server");
@@ -313,7 +313,7 @@ const OrderSummary = () => {
       // Implement reconnection logic here
       setTimeout(() => {
         console.log("Attempting to reconnect...");
-        setSocket(new WebSocket("wss://dualtechpos.com:3443"));
+        setSocket(new WebSocket("wss://eli-pos.onrender.com"));
       }, 5000);
     };
 

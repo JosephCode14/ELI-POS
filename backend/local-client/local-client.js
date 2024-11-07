@@ -3,14 +3,14 @@ const net = require("net");
 const snmp = require("net-snmp");
 const ping = require("ping");
 
-const PRINTER_IP = "10.10.2.213";
-const PRINTER_IP_KITCH = "10.10.2.214";
+const PRINTER_IP = "192.168.10.187";
+const PRINTER_IP_KITCH = "192.168.10.187";
 const COMMON_PORTS = [631, 9100, 515];
 
 let socket;
 
 function connectWebSocket() {
-  socket = new WebSocket("wss://dualtechpos.com:3443");
+  socket = new WebSocket("wss://eli-pos.onrender.com");
 
   socket.on("open", () => {
     console.log("Connected to WebSocket server on Render");
