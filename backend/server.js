@@ -7,7 +7,7 @@ const WebSocket = require("ws");
 const dotenv = require("dotenv");
 dotenv.config();
 
-const port = process.env.PORT || 8086;
+const port = process.env.PORT || 8083;
 app.use(cors());
 app.use(express.json({ limit: "500mb" }));
 app.use(
