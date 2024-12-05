@@ -1,0 +1,37 @@
+.btn-dish-container h2 {
+  flex: 1;
+}
+.dish-table-container table {
+  margin-top: 20px;
+}
+.dish-table-container table thead {
+  border-radius: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: #a1c7ee;
+}
+.dish-table-container table thead th {
+  padding: 10px;
+  font-size: 13px;
+  text-align: center;
+}
+.dish-table-container table tbody td {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+.type-container .type {
+  margin-right: 20px;
+}
+.type-container .sku-name {
+  width: 100%;
+}
+.type-container select {
+  width: 20rem;
+  height: 4rem;
+}
+.dish-table-container table tbody td input {
+}
+.dish-table-container table tbody td select {
+  height: 3.9rem;
+}

@@ -1,0 +1,392 @@
+.check-title h2 {
+  flex: 1;
+  margin-bottom: 0;
+}
+.check-title i {
+  color: black;
+  font-size: 3em;
+}
+
+.head-checkout {
+  background-color: #fff;
+}
+.head-checkout .icon-container i {
+  font-size: 30px;
+  color: black;
+}
+
+.checkout-container {
+  height: 100vh;
+  background-color: #f6f8fa;
+}
+
+.checkout-order-details-container {
+  width: 40%;
+}
+.orders-container table thead {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  padding: 5px;
+}
+.orders-container table thead th {
+  padding: 5px;
+  font-size: 13px;
+  text-align: center;
+}
+.orders-container table tbody td {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+.orders-container table tbody td i {
+  position: relative;
+  top: 5px;
+}
+
+.check-card {
+  height: 90%;
+  justify-content: space-between;
+  gap: 15px;
+  display: flex;
+  padding: 10px;
+}
+
+i.lightblue {
+  color: lightblue;
+}
+i.red:hover {
+  color: red;
+}
+
+.sales {
+  border: 1px solid gray;
+  padding: 10px;
+  text-align: center;
+}
+.sales:hover {
+  border: 1px solid blue;
+  color: blue;
+  cursor: pointer;
+}
+.method h4 {
+  margin: 0;
+}
+
+.payment-details {
+  border-top: 1px dotted blue;
+}
+
+.payment-details .cont {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.payable,
+.received,
+.change {
+  font-size: 1.6em;
+}
+.received {
+  color: blue;
+}
+.change {
+  color: red;
+}
+
+.calc-container table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.calc-container table tr th,
+.calc-container table tr td {
+  padding: 25px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  border-right: 0.1px solid rgb(228, 223, 223);
+}
+
+.calc-container table th:first-child {
+  border-top-left-radius: 10px;
+  border-top: 0.5px solid rgb(228, 223, 223);
+  border-left: 0.5px solid rgb(228, 223, 223);
+  border-bottom: 0.5px solid rgb(228, 223, 223);
+}
+
+.calc-container table th {
+  border-top-right-radius: 10px;
+  border-top: 0.5px solid rgb(228, 223, 223);
+  border-right: 0.5px solid rgb(228, 223, 223);
+  border-bottom: 0.5px solid rgb(228, 223, 223);
+}
+
+.calc-left-last-button {
+  border-bottom-left-radius: 10px;
+  border-top: 0.5px solid rgb(228, 223, 223);
+  border-bottom: 0.5px solid rgb(228, 223, 223);
+  border-left: 0.5px solid rgb(228, 223, 223);
+}
+
+.calc-container th:hover,
+.calc-container td:hover {
+  background-color: #7bb1d8;
+  cursor: pointer;
+}
+
+.calc-clear-btn {
+  border-top: 0.5px solid rgb(228, 223, 223);
+  border-bottom-right-radius: 10px;
+  border-bottom: 0.5px solid rgb(228, 223, 223);
+  border-right: 0.5px solid rgb(228, 223, 223);
+  background-color: #f3f3f3;
+}
+
+.calc-gray-btn {
+  background-color: #f3f3f3;
+}
+
+.payment-container {
+  width: 35%;
+}
+
+.payment-head {
+  display: flex;
+  align-items: center;
+}
+
+.payment-head h2 {
+  flex: 1;
+}
+.payment-discount {
+  display: flex;
+  font-size: 3rem;
+  border-bottom: 2px solid blue;
+  margin-bottom: 20px;
+}
+.payment-discount .selected-payment {
+  flex: 1;
+  color: gray;
+}
+.order-checkout-btn button {
+  width: 100%;
+  background-color: #2880bf;
+  border-radius: 10px;
+  margin-top: 15px;
+  border: none;
+  padding: 8px;
+  color: white;
+  font-size: 2em;
+  transition: background-color 0.3s ease;
+}
+
+.order-checkout-btn button:hover:not(:disabled) {
+  background-color: #1f5a9d;
+}
+
+.order-checkout-btn button:disabled {
+  background-color: #d3d3d3;
+  color: #a0a0a0;
+  cursor: not-allowed;
+}
+
+.sales.active {
+  border: 1px solid blue;
+}
+.orders-container table i:hover {
+  cursor: pointer;
+}
+
+.ordernum-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ordernum-details h2:nth-child(2) {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.modal-checkout-containers {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-checkout-containers h2 {
+  text-align: center;
+}
+
+.paymentmethod-payable {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.paymentmethod-payable span:nth-child(1) {
+  width: 50%;
+  font-size: 16px;
+}
+
+.paymentmethod-payable span:nth-child(2) {
+  width: 50%;
+  font-size: 16px;
+  display: flex;
+  justify-content: end;
+}
+
+.total-checkouts {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.total-checkouts span:nth-child(1) {
+  width: 50%;
+  font-size: 20px;
+}
+
+.total-checkouts span:nth-child(2) {
+  width: 50%;
+  font-size: 20px;
+  display: flex;
+  justify-content: end;
+  font-weight: bold;
+}
+
+.checkout-button-confirm {
+  margin-top: 20px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkout-button-confirm button {
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #5983e7;
+  color: #fff;
+  font-size: 15px;
+  padding: 20px;
+}
+
+.checkout-button-confirm button:hover {
+  background-color: #6290fe;
+}
+
+.modal-top-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-top-card h2 {
+  text-align: center;
+}
+
+.modal-top-card-student {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.button-top-card {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.button-top-card button {
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #5983e7;
+  color: #fff;
+  font-size: 15px;
+  padding: 10px;
+  text-align: center;
+}
+
+.button-top-card button:hover {
+  background-color: #6290fe;
+}
+
+.button-top-card button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.button-top-card button:disabled:hover {
+  background-color: #ccc;
+}
+
+.student-pin-modal-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.student-pin-modal-container h2 {
+  text-align: center;
+}
+
+.pin-box-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.first-form-control {
+  width: 25%;
+  margin-right: 4px;
+}
+
+.second-form-control {
+  width: 25%;
+  margin-right: 4px;
+}
+
+.third-form-control {
+  width: 25%;
+  margin-right: 2px;
+}
+
+.fourth-form-control {
+  width: 25%;
+  margin-left: 2px;
+}
+
+.buttonYes-cancel-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.buttonYes-cancel-section button:nth-child(1) {
+  border: none;
+  padding: 10px;
+  background-color: #5983e7;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.buttonYes-cancel-section button:hover {
+  background-color: #6290fe;
+}
+
+.buttonYes-cancel-section button:nth-child(2) {
+  border: none;
+  padding: 10px;
+  background-color: gray;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+}

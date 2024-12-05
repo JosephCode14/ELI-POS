@@ -1,0 +1,293 @@
+.kiosk-container {
+  height: 100vh;
+}
+.food-pic-header img {
+  width: 100%;
+  height: 15vh;
+  object-fit: cover;
+}
+.kiosk-body {
+  display: flex;
+  background-color: #001c2c;
+  height: 75vh;
+  overflow: hidden;
+}
+.kiosk-nav {
+  width: 18vw;
+  border: 1px solid #a1c7ee;
+  border-top-right-radius: 10px;
+  max-height: 100vh;
+
+  height: calc(70vh - 12vh);
+  overflow-y: auto;
+  background-color: #fff;
+}
+.kiosk-nav-header {
+  text-align: center;
+  background-color: #a1c7ee;
+  border-top-right-radius: inherit;
+  padding: 15px;
+  position: fixed;
+  width: 17.1vw;
+  margin-bottom: 10px;
+}
+.kiosk-categories-list {
+  padding-top: 70px;
+}
+.kiosk-categories-list img {
+  height: 4rem;
+}
+.kiosk-categories-list .category {
+  display: grid;
+  justify-content: center;
+  margin: 10px;
+}
+
+.kiosk-list-container {
+  margin-top: 12px;
+  margin-left: 20px;
+  width: 85vw;
+  height: 80vh;
+}
+.kiosk-lists {
+  margin-top: 10px;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  border-top-right-radius: 0%;
+  border-bottom-right-radius: 0%;
+  height: 50vh;
+
+  height: 65vh;
+  overflow-y: auto;
+}
+.kiosk-head-m {
+  display: flex;
+  justify-content: space-between;
+}
+.kiosk-head {
+  display: flex;
+}
+.kiosk-modal-head {
+  display: flex;
+  justify-content: space-between;
+}
+.kiosk-head h2 {
+  margin-right: 40px;
+}
+.kiosk-head .input-group .search {
+  width: 20em;
+}
+.kiosk-categ-pic {
+  height: 4rem;
+  margin-right: 10px;
+  border-radius: 50%;
+  width: 4rem;
+  position: relative;
+  bottom: 1px;
+}
+.kiosk-categ {
+  font-size: 2.5rem;
+  position: relative;
+  top: 6px;
+  color: #fff;
+}
+.kiosk-product-container {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  padding-bottom: 150px;
+}
+
+.kiosk-product {
+  width: 17em;
+  border: 1px solid #ccc;
+  padding: 10px 10px 0 10px;
+  position: relative;
+  margin: 5px;
+  word-wrap: break-word;
+}
+.kiosk-table tbody td {
+  border-bottom: 0.5px solid #ccc;
+  padding: 5px;
+}
+
+.kiosk-product:hover {
+  cursor: pointer;
+}
+.kiosk-product img {
+  width: 100%;
+  height: 15em;
+  max-height: 10em;
+  max-width: 15em;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.kiosk-content {
+  padding: 10px 0;
+}
+.kiosk-product-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.kiosk-product-name h3 {
+  text-align: center;
+  margin-top: 10px;
+  color: #041e76;
+  font-size: 2rem;
+  white-space: normal;
+}
+.kiosk-product-name h4 {
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.kiosk-table {
+  border-collapse: collapse;
+  padding-bottom: 6.5rem;
+  width: 100%;
+  background-color: #fff;
+  height: 20vh;
+}
+.kiosk-table th {
+  background-color: #e1f0ff;
+  padding: 10px;
+
+  text-align: center;
+}
+.kiosk-table tbody {
+  overflow: auto;
+}
+
+.kiosk-table td {
+  text-align: center;
+  padding: 0.5rem;
+}
+.kiosk-order-summary {
+  position: absolute;
+  bottom: 0;
+}
+.total-order-container {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  background-color: #001c2c;
+
+  justify-content: space-around;
+  color: #fff;
+}
+
+.kiosk-order-container {
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 10px;
+  width: 45%;
+}
+.total-order h2 {
+  margin: 0;
+}
+.kiosk-payment-container {
+  padding: 5px;
+  display: flex;
+  gap: 15px;
+}
+.kiosk-payment {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.kiosk-payment-cancel {
+  background-color: red;
+  padding: 10px;
+}
+.kiosk-payment h1 {
+  color: #041e76;
+
+  font-size: 2rem;
+}
+.kiosk-payment-cancel h1 {
+  color: #fff;
+  font-size: 2rem;
+}
+.btn-place {
+  background-color: #2880bf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 1.3rem;
+  font-size: 1.3rem;
+}
+.total-payment {
+  display: flex;
+  justify-content: space-between;
+}
+.total-payment .total-title {
+  flex: 1;
+}
+.total-payment .total,
+.total-title {
+  display: flex;
+  align-items: center;
+}
+.kiosk-cart-img {
+  height: 3rem;
+  width: 3rem;
+}
+.img-kiosk-prev {
+  height: 3rem;
+}
+.kiosk-total-container {
+  gap: 20px;
+}
+.kiosk-total-container .total {
+  color: red;
+}
+.kiosk-modal-head button {
+  background-color: white;
+  border: 1px solid #2880bf;
+  color: #2880bf;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 1rem 1.3rem;
+}
+.kiosk-modal-head button:hover {
+  background-color: #2880bf;
+  color: white;
+}
+.kiosk-table i:hover {
+  cursor: pointer;
+}
+.order-qty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+.exceed-head {
+  align-self: center;
+}
+.notif-exceed {
+  background-color: white;
+}
+
+.qty-circle {
+  font-size: 2rem;
+  background-color: #2880bf;
+  position: absolute;
+  color: white;
+  padding: 5px 15px;
+  top: -20px;
+  right: -10px;
+  border-radius: 50%;
+}

@@ -1,0 +1,8 @@
+.total {
+  padding: 0;
+  padding: 10px 0px;
+}
+.total h2 {
+  flex: 1;
+  font-size: 1.5rem;
+}

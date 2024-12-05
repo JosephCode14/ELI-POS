@@ -1,0 +1,147 @@
+.dashboard-container {
+  margin: 7rem 1rem 0 27rem;
+  height: calc(100vh - 7rem);
+  overflow-y: scroll;
+}
+.dashboard-container p {
+  margin: 0;
+}
+.custom-card {
+  padding: 3rem;
+  background-color: #fff;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+.dash-card {
+  padding: 0;
+}
+.store-details {
+  padding: 1rem 3rem 0 3rem;
+}
+.dash-from-container {
+  display: flex;
+  align-items: center;
+}
+
+.dash-from-container h3 {
+  width: 7rem;
+}
+.dash-date-container {
+  width: 40%;
+  padding: 1rem 0 0 0;
+  display: grid;
+  gap: 20px;
+}
+.dash-from-container input {
+  margin: 0;
+}
+.store-details,
+.sales-details {
+  display: flex;
+  justify-content: space-between;
+  /* margin-top: 20px; */
+}
+.sales-details {
+  gap: 30px;
+  padding: 1rem 2rem 2rem 2rem;
+}
+.store-container {
+  display: flex;
+  gap: 15px;
+}
+.store-container p {
+  font-size: 1.2em;
+  color: #000;
+}
+.dashboard-container h3 {
+  color: #1b2559;
+}
+.sales-container img {
+  height: 60px;
+  width: 60px;
+}
+.sales-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 2rem 1rem;
+  width: 80%;
+}
+.sales-container i {
+  font-size: 58px;
+}
+.sales-container p {
+  font-size: 1.6em;
+  color: #000;
+}
+.sales-container h3 {
+  font-size: 3em;
+  margin-top: 10px;
+}
+.itm-sold {
+  position: relative;
+  /* right: 6rem; */
+}
+.dash-img {
+  height: 3rem;
+  border-radius: 50%;
+  width: 3rem;
+  margin-right: 1rem;
+}
+.stats {
+  background-color: #72ca8a;
+  color: #fff;
+  padding: 0 12px;
+  border-radius: 10px;
+}
+
+.nav-tabs .nav-link {
+  color: gray;
+}
+.nav-tabs .nav-link.active {
+  color: #007bff !important;
+}
+.tab-content {
+  height: 200px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+.custom-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.custom-table th,
+.custom-table td {
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+.custom-table tbody th {
+  padding-bottom: 10px;
+}
+.dash-table thead tr th {
+  font-size: 1.4rem;
+}
+/* .custom-table tbody tr:nth-child(odd) td {
+  background-color: #f2f2f2;
+} */
+.terminal-container h6 {
+  font-weight: 700;
+  font-size: 1.8em;
+}
+.dash-table tbody tr td:nth-child(4) div {
+  display: flex;
+  justify-content: space-between;
+}
+.dash-table tbody tr:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+.dash-table tbody tr:hover td:nth-child(4) i {
+  color: blue;
+}
+.terminal-dash {
+  height: calc(100vh - 300px);
+  overflow-y: auto;
+}
