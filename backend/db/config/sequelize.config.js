@@ -7,7 +7,7 @@ const sequelize = new Sequelize({
   username: process.env.DB_USERNAME,
   password: process.env.DB_PASS,
   timezone: "+08:00",
-  alter: false,
+  alter: true,
 });
 
 sequelize
