@@ -1,0 +1,57 @@
+/* Create User role */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.main_container{
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+
+
+.header{
+    border-bottom: 1px solid #A1A8B1;
+}
+.lbl_desc_rname{
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    vertical-align: top;
+    margin-bottom: 0.5rem;
+    margin: 0rem 0rem 0.9980000000000002rem 0.224rem;
+    height: 1.6rem;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    font-weight: 600;
+    line-height: 1.3333333333;
+    text-transform: uppercase;
+    color: #007bff;
+    font-family: POPPINS;
+    white-space: nowrap;
+}
+.btn_saveCancel{
+    width: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.tableHead{
+    font-size: large;
+}
+
+/* h3{
+    color: #FFFFFF;
+ 
+} */
+ /* .module{
+    color: black;
+    font-size: medium;
+    margin-left: 10px;
+} */
+/* .module-checkbox{
+    color: black;
+    font-size: medium;
+    margin-left: 25px;
+} */ 

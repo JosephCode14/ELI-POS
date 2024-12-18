@@ -1,0 +1,203 @@
+* {
+  user-select: none; /* Prevents text selection */
+}
+.login-container,
+.login-container input,
+.login-container button {
+  user-select: none;
+}
+html,
+body {
+  overflow: hidden; /* Prevents scrolling */
+  touch-action: none; /* Disables touch scrolling */
+}
+
+.login-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fdf6f6;
+}
+.body-modal p {
+  margin: 5px;
+}
+.img-pos {
+  border-radius: 10px;
+  height: 80%;
+  width: 80%;
+  object-fit: cover;
+}
+.login-container input {
+  background: #f1f1f1;
+  width: 330px;
+  border-radius: 10px;
+  height: 2.5em;
+  border-color: lightgray;
+  padding: 10px;
+}
+.login-container .input-container {
+  display: grid;
+  gap: 10px;
+  padding-left: 2rem;
+  margin-top: 2rem;
+}
+.eli-title {
+  /* font-size: 9rem; */
+  display: flex;
+  gap: 10px;
+  text-transform: uppercase;
+}
+.title {
+  font-size: 6rem;
+  display: flex;
+  gap: 10px;
+}
+.email-container,
+.pass-container {
+  display: flex;
+  flex-direction: column;
+}
+.welcome-container {
+  margin: 2rem 0 0 1rem;
+}
+.blue {
+  color: #025692;
+}
+.of {
+  color: #d89f65;
+}
+.sale {
+  color: #4a5c2f;
+}
+.sub-title {
+  font-size: 4rem;
+}
+.details-container {
+  margin: 4rem 0 0 6rem;
+  padding: 4rem 5rem 3rem 5rem;
+}
+.login-img-container {
+  width: 768px;
+  height: 480px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.login-img-container img {
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+}
+
+.details-container {
+  width: 60%;
+}
+.error {
+  color: red;
+}
+.forgot {
+  position: relative;
+  left: 11.5rem;
+  color: #025692;
+  font-size: 1rem;
+}
+.forgot:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.btn-sign {
+  width: 330px;
+
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background: #025692;
+  color: white;
+  border: none;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.btn-sign:hover {
+  background: #024677;
+}
+
+.modal-btn {
+  width: 15%;
+}
+.modal-p {
+  font-size: 15px;
+  line-height: 20px;
+  color: #000;
+}
+.modal-input-container {
+  padding: 1rem 2rem 0 2rem;
+}
+.modal-inpt-container {
+  padding: 0 2rem 0 2rem;
+}
+
+.time-remaining {
+  font-size: 13px;
+  position: relative;
+  left: 7px;
+}
+.email-container label,
+.pass-container label {
+  font-size: 15px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.match-status {
+  font-size: 13px;
+  position: relative;
+  bottom: 10px;
+  left: 2.5rem;
+}
+
+.welcome-container h4 {
+  font-size: 3rem;
+}
+.welcome-container p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.email-container input,
+.pass-container input {
+  height: 4rem;
+  font-size: 1.5rem;
+}
+
+.modal .modal-dialog .modal-content .modal-header {
+  padding: 10px 10px !important;
+}
+.modal .modal-dialog .modal-content .modal-footer {
+  padding: 8px 10px !important;
+}
+
+.modal-input-container p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.modal-input-container input {
+  height: 40px;
+  font-size: 1.5rem;
+}
+.modal-footer button {
+  height: 40px;
+  font-size: 1.2rem;
+  width: 80px;
+}
+
+.pass-input .eye-icon {
+  z-index: 10;
+  position: absolute;
+  padding: 10px;
+  margin-left: 280px;
+}

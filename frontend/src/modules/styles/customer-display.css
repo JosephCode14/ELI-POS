@@ -1,0 +1,97 @@
+.customer-display-container {
+  margin-top: 6rem;
+  background-color: #001c2c;
+}
+
+.customer-img-container img {
+  width: 60vw;
+  height: 78vh;
+}
+.customer-total-order {
+  height: 13%;
+  background-color: #001c2c;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.customer-total-order .total-order {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  padding: 0.5rem 4rem;
+}
+.customer-total-order .customer-change {
+  display: flex;
+  color: red;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4.3rem;
+}
+.customer-receipt-container {
+  margin-top: 1rem;
+  height: 78vh;
+  width: 40vw;
+  background-color: #fff;
+}
+.customer-welcome-container {
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.customer-welcome-container p {
+  color: #000;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.customer-welcome-container::before,
+.customer-welcome-container::after {
+  content: "* * * * * * * * * *";
+  display: flex;
+  align-items: end;
+  font-size: 20px;
+  padding: 0 1rem;
+  position: relative;
+  top: 7px;
+}
+.customer-order-container {
+  padding: 0 2rem;
+}
+.customer-order-container table {
+  height: 250px;
+  overflow: scroll;
+}
+.customer-order-container thead {
+  color: #fff;
+  border-radius: 10px;
+  background-color: #001c2c;
+  padding: 5px;
+}
+.customer-order-container thead th {
+  padding: 10px;
+  font-size: 13px;
+  text-align: center;
+}
+.customer-order-container tbody td {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+.customer-order-container tbody td i {
+  position: relative;
+  top: 5px;
+}
+.customer-payment-details .title-details {
+  font-size: 1.9rem;
+  font-weight: 900;
+  padding: 1rem 2rem;
+}
+.all-payment-details div {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+.all-payment-details .received {
+  color: #1744e3;
+}

@@ -1,0 +1,235 @@
+.main-screen-kiosk img {
+  width: 100vw;
+  height: calc(100vh - 8vh);
+  position: relative;
+}
+.kiosk-welcome-container {
+  position: absolute;
+  height: 8vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  width: 100%;
+}
+.kiosk-welcome-container h1 {
+  font-size: 6rem;
+  display: flex;
+  align-items: center;
+}
+.kiosk-foot-container h1 {
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+}
+.kiosk-foot-container {
+  position: absolute;
+  height: 8vh;
+  bottom: 0;
+  background-color: white;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  z-index: 1;
+  gap: 2rem;
+}
+.kiosk-foot-container img {
+  height: 6rem;
+  width: 6rem;
+  position: absolute;
+}
+
+.order-type-container {
+  background: #001c2c;
+  height: 100vh;
+  padding: 10rem;
+}
+.selection-container {
+  background: #f2f7ff;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+.kiosk-img-logo {
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 8rem;
+  display: flex;
+  align-items: center;
+}
+.kiosk-logo-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 12rem;
+}
+.choose-type-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rem;
+  gap: 5rem;
+}
+.choose-type-container h1 {
+  font-size: clamp(3rem, 4.5vw, 8rem);
+  text-align: center;
+}
+.choose-type-container .kiosk-type-p {
+  font-size: clamp(1rem, 5vw, 7rem);
+  font-weight: 900;
+}
+.kiosk-dine-in,
+.kiosk-take-out {
+  border: 2px solid black;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  padding: 5rem;
+  border-radius: 5px;
+}
+.kiosk-dine-in:hover,
+.kiosk-take-out:hover {
+  cursor: pointer;
+  background: #dbe6ff;
+}
+.order-ty-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 10rem;
+}
+.order-ty-container h1 {
+  font-size: clamp(1rem, 8vw, 8rem);
+}
+.your-num-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5rem;
+  padding-top: 4rem;
+  margin-bottom: 10rem;
+}
+.your-num-container h1 {
+  font-size: clamp(1rem, 5vw, 8rem);
+}
+.kiosk-order-num {
+  color: #005ac1;
+}
+.kiosk-proceed-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 45rem;
+}
+.kiosk-proceed-container h1 {
+  font-size: clamp(1rem, 4.5vw, 8rem);
+  text-align: center;
+}
+.kiosk-start-new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 28rem;
+}
+.kiosk-start-new button {
+  color: #fff;
+  background: #001c2c;
+  padding: 3rem 5rem;
+
+  font-size: clamp(1rem, 4.5vw, 8rem);
+  border-radius: 10px;
+}
+.kiosk-payment-p {
+  font-size: clamp(1rem, 4.5vw, 8rem);
+  text-align: center;
+  font-weight: 900;
+}
+.kiosk-summary-title {
+  padding: 5rem 2rem;
+}
+.kiosk-summary-title h1 {
+  font-size: clamp(1rem, 5.5vw, 8rem);
+  text-align: center;
+}
+.kiosk-sum-table {
+  padding: 0 2rem;
+}
+.kiosk-sum-table table th {
+  font-size: clamp(1rem, 3vw, 3rem);
+  text-align: center;
+  font-weight: 900;
+}
+.kiosk-sum-table table tbody td {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 900;
+  padding: 2rem;
+}
+.kiosk-sum-total {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+}
+.kiosk-sum-total h1 {
+  font-size: clamp(1rem, 3vw, 4rem);
+}
+.kiosk-sum-total .sum-total {
+  color: red;
+}
+.kiosk-tap-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.kiosk-tap-card img {
+  height: 20rem;
+  margin-top: 5rem;
+}
+.kiosk-tap-card .ellipsis {
+  margin-top: 5rem;
+  font-size: 5rem;
+}
+
+.btn-below {
+  height: 95% !important;
+}
+.kiosk-w-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 40px;
+}
+.kiosk-w-btn button {
+  font-weight: 900;
+  font-size: 2.5rem;
+  background-color: #fff;
+  padding: 2rem 5rem;
+}
+.input-rfid {
+  background-color: #f2f7ff;
+  color: #f2f7ff;
+}
+.no-eye::-webkit-password-toggle-button {
+  display: none;
+}
+
+.no-eye::-moz-password-toggle {
+  display: none;
+}
+
+.no-eye::-ms-reveal {
+  display: none;
+}
+.w-eli-logo {
+  padding-top: 5rem !important;
+}
+.cont-eli-logo {
+  border: none !important;
+  padding: 0 !important;
+}
+.eli-logo {
+  height: 22rem;
+}

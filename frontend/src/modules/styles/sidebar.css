@@ -1,0 +1,62 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 260px;
+  background: #fff;
+  border-right: 1px solid lightgray;
+}
+.nav-container {
+  padding: 45% 10% 0 10%;
+}
+
+.link-container:hover {
+  color: blue;
+  border: 1px solid blue;
+  cursor: pointer;
+}
+.link-container:hover i {
+  color: blue;
+}
+.link-container h6 {
+  margin: 0;
+}
+.link-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 1rem 1.5rem 1rem 1rem;
+  gap: 10px;
+  width: 20rem;
+  margin-bottom: 10%;
+}
+.selected-nav {
+  color: blue;
+  border: 1px solid blue;
+}
+.selected-nav i {
+  color: blue;
+}
+.not-included {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .link-container {
+    width: 4.5rem;
+  }
+
+  .nav {
+    width: 64px;
+  }
+
+  .nav-container {
+    padding: 8rem 10% 0 10%;
+  }
+
+  .link-container h6 {
+    display: none;
+  }
+}

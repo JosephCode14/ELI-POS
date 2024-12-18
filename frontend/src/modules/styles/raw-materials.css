@@ -1,0 +1,94 @@
+.add-material-container {
+  width: 30%;
+  max-width: 30%;
+  border-left: 2px solid #e7e7e7;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-material-container .form-control {
+  font-size: 14px;
+}
+
+@media (max-width: 1292px) {
+  .add-material-container {
+    width: 30%;
+    max-width: 30%;
+  }
+
+  .add-material-footer button {
+    width: 30rem;
+    min-height: 5rem;
+  }
+}
+
+@media (max-width: 1006px) {
+  .add-material-container {
+    width: 20%;
+    max-width: 20%;
+  }
+
+  .add-material-footer button {
+    width: 10rem;
+    min-height: 3rem;
+  }
+
+  .add-material-footer {
+    padding-bottom: 10px;
+  }
+}
+
+.add-material-content {
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  flex-grow: 1;
+}
+
+.add-material-body {
+  width: 100%;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.add-material-title {
+  width: 100%;
+  overflow: visible;
+}
+
+.add-material-footer {
+  margin-top: auto;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+  flex: 1;
+}
+
+.add-material-footer button {
+  font-size: large;
+  margin: 10px;
+  width: 30rem;
+  min-height: 5rem;
+}
+
+.main-div {
+  margin: 0 2rem 2rem 0;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.archive-product-container {
+  flex: 1;
+  overflow-y: hidden;
+  height: calc(100vh - 7rem);
+  box-sizing: border-box;
+}
+
+body,
+html {
+  overflow: hidden;
+  height: 100%;
+}

@@ -1,0 +1,207 @@
+.inventory-container {
+  margin: 7rem 1rem 0 27rem;
+  height: calc(100vh - 7rem);
+}
+.inventory-container .date-range-container {
+  padding: 0;
+}
+.inventory-container .date-range-container {
+  gap: 20px;
+}
+.inventory-container .date-range-container .i-date {
+  width: 21rem;
+}
+.from-container label,
+.to-container label {
+  padding-top: 12px;
+  display: flex;
+  align-content: center;
+  font-size: 1.2em;
+}
+
+.days-container,
+.from-container,
+.to-container {
+  padding-bottom: 0;
+}
+.from-container,
+.to-container {
+  gap: 10px;
+}
+.days-container {
+  gap: 30px;
+}
+.days-container p {
+  color: black;
+  font-size: 1.2em;
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 5px;
+}
+.days-container p:hover {
+  color: blue;
+  border-color: blue;
+}
+.days-container div {
+  /* border: 1px solid gray; */
+  font-size: 1.2rem;
+  /* padding-top: 6px; */
+}
+.head-container {
+  padding: 0;
+}
+/* Card */
+.inventory-container .custom-card {
+  padding: 1em 1em;
+  margin: 0 1em;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.inventory-container .title-container {
+  flex: 1;
+}
+.inventory-container .title-container {
+  padding-left: 24px;
+  padding-top: 23px;
+}
+.add-new-stock-container {
+  display: flex;
+  align-items: center;
+}
+.add-new-stock-container button {
+  width: 120px;
+  height: 50%;
+  background-color: #3a74a9;
+  color: white;
+  font-size: 1.2em;
+  border-radius: 5px;
+  border: none;
+  margin-left: 20px;
+}
+
+.inventory-container .s-container {
+  display: flex;
+  align-items: center;
+}
+.filtering-category-container {
+  padding: 0;
+}
+
+.inventory-container .s-container .search,
+.filtering-category-container .search {
+  width: 40rem;
+}
+
+/* Select */
+.modal-select {
+  height: 59%;
+  border-radius: 10px;
+  width: 8rem;
+}
+
+.export-container button {
+  width: 85px;
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #3a74a9;
+}
+
+/* Outbound */
+
+.outbound-select {
+  height: 100%;
+  margin: 0;
+}
+
+/* Stock Counting */
+.add-new-stock-container .stock-count {
+  width: 140px;
+}
+.cell-hover:hover {
+  background-color: gray !important;
+}
+
+.stock-ID-container p {
+  background-color: lightgray;
+  font-size: 2rem;
+  padding: 10px 10px;
+}
+.stock-remarks {
+  gap: 50px;
+}
+.stock-ID-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.inventory-stock-container {
+  justify-content: space-between;
+}
+/* .inventory-stock-container .input-group {
+  width: 40%;
+} */
+.inventory-stock-container .group-in {
+  width: 40%;
+}
+.inventory-stock-container h2 {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.invent-stock-custom-card {
+  margin-top: 6em;
+  padding: 3rem;
+  background-color: #fff;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+.receivingID {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.receivingID p {
+  background-color: lightgray;
+  font-size: 2rem;
+  padding: 10px 10px;
+}
+
+/* Sweet alert */
+.swal-button-container {
+  text-align: center !important;
+}
+.swal-footer {
+  display: flex !important;
+  justify-content: center !important;
+}
+/* Customize button colors */
+.--pdf {
+  background-color: red !important;
+  border: none !important;
+}
+
+.--excel {
+  background-color: green !important;
+  border: none !important;
+}
+
+.search-and-filter{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.transac-dropdown{
+  display: flex;
+  width: 100%;
+  width: 100%;
+  flex-direction: row;
+}
+
+.transaction-input{
+  width: 18.5%;
+  margin-right: 30px;
+}

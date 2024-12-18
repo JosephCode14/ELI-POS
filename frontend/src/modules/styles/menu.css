@@ -1,0 +1,163 @@
+* {
+  user-select: none; /* Prevents text selection */
+}
+.login-container,
+.login-container input,
+.login-container button {
+  user-select: none;
+}
+html,
+body {
+  overflow: hidden; /* Prevents scrolling */
+  touch-action: none; /* Disables touch scrolling */
+}
+
+.menu-container {
+  background: #e2f5ff;
+  height: 100vh;
+}
+.time-container {
+  display: flex;
+  justify-content: end;
+}
+.t {
+  flex: 1;
+}
+.buttons-container i {
+  color: white;
+}
+.time {
+  font-size: 2vw;
+  text-align: end;
+  padding-right: 3rem;
+  padding-top: 0.5rem;
+}
+.menus button {
+  background-color: #03396c;
+  color: white;
+  width: 28vw;
+  height: 16vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.8vw;
+}
+.menus button:hover {
+  background-color: #145897;
+}
+
+.menus button:disabled {
+  background-color: #a0a0a0;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.menus button:disabled:hover {
+  background-color: #a0a0a0;
+}
+.logout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.logout:hover p,
+.logout:hover i {
+  color: red;
+}
+.logout i {
+  font-size: 2.5vw;
+  color: black;
+}
+.btn-details h2,
+.btn-details p {
+  margin: 0;
+}
+.desc {
+  font-size: 0.9vw;
+  text-align: start;
+}
+.menus {
+  display: flex;
+  gap: 2vw;
+  margin-bottom: 1.3vw;
+}
+
+.menus i {
+  font-size: 4vw;
+}
+.btn-details {
+  width: 75%;
+  padding-left: 1rem;
+}
+.btn-details h2 {
+  font-size: 2.3vw;
+  text-align: start;
+}
+.btn-details p {
+  color: white;
+}
+.buttons-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.title-menu {
+  padding-left: 5.5vw;
+}
+.title-menu span {
+  font-weight: 700;
+  font-size: 6vw;
+  padding-right: 1vw;
+  text-transform: uppercase;
+}
+.sentence {
+  display: grid;
+  justify-content: center;
+  margin: 1rem;
+  width: 100%;
+  font-size: 1.4vw;
+}
+.sentence p {
+  text-align: center;
+  color: black;
+}
+
+.blue {
+  color: #025692;
+}
+.of {
+  color: #d89f65;
+}
+.sale {
+  color: #4a5c2f;
+}
+.footer {
+  display: flex;
+  padding: 0.5vh 6vw;
+  background: #e2f5ff;
+  border-top: none;
+}
+.logout {
+  position: relative;
+  bottom: 1.2vw;
+}
+.footer p {
+  color: black;
+  font-size: 1.5vw;
+}
+
+.version {
+  flex: 1;
+}
+
+.ordering-swal-yes-button {
+  background-color: #7066E0;
+  color: white;
+}
+
+.ordering-swal-no-button {
+  background-color: #6E7881;
+  color: white;
+}
+

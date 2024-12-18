@@ -1,0 +1,309 @@
+.custom-switch .form-check-input {
+  width: 30px;  /* Adjust the width as needed */
+  height: 15px; /* Adjust the height as needed */
+}
+
+.custom-switch .form-check-input:checked {
+  background-color: green;
+}
+
+.custom-switch .form-check-input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(0, 128, 0, 0.25);
+}
+
+.custom-switch .form-check-input::before {
+  width: 20px;
+  height: 20px;
+  transform: translateX(20px);
+}
+
+.custom-switch .form-check-input:checked::before {
+  transform: translateX(20px);
+}
+
+.users-container {
+  margin: 7rem 1rem 0 28rem;
+  height: calc(100vh - 7rem);
+}
+
+.btn-manage-container button {
+  border-radius: 5px;
+  background: #2880bf;
+  color: #fff;
+  padding: 4px;
+  width: 300px;
+  font-size: 1.5em;
+  border-color: #2880bf;
+}
+.btn-manage-container {
+  gap: 12em;
+}
+
+.user-filter {
+  gap: 20px;
+}
+.search-user-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: gainsboro;
+  padding: 20px;
+  margin-top: 20px;
+}
+.search-user-container .input-group {
+  width: 80%;
+}
+.search-user-container p {
+  margin-right: 30px;
+  margin-bottom: 0;
+}
+.search-user-container p:hover {
+  text-decoration: underline;
+}
+
+/* Table */
+.custom-user-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 15px;
+  max-height: 400px;
+}
+.custom-user-table th {
+  background-color: #e1f0ff;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+.custom-user-table td {
+  text-align: center;
+  padding: 0.5rem;
+}
+.custom-user-table tbody i {
+  color: black;
+}
+.custom-user-table tbody i:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+/* Modal for Add user */
+.input-user-container {
+  margin-bottom: 10px;
+}
+.input-user-container p {
+  margin-bottom: 5px;
+}
+
+/* Toggle */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin-top: 5px;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 10px;
+  width: 30px;
+  height: 16px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+input:checked + .slider {
+  background-color: yellowgreen;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px yellowgreen;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(12px);
+  -ms-transform: translateX(12px);
+  transform: translateX(12px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.user-filter .select-transac {
+  width: 200px;
+}
+
+/* Manage Users */
+.manage-user button {
+  /* width: 200px; */
+}
+.manage-user {
+  gap: 30px;
+}
+
+.transac-arrow i {
+  color: black;
+  position: relative;
+  top: 4px;
+}
+#cell-1-undefined {
+  padding: 0;
+}
+
+td.arrow i {
+  position: absolute;
+  left: 40px;
+  color: black;
+}
+/* Table User */
+.custom-user-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 15px;
+  /* max-height: 400px; */
+}
+.custom-user-table th {
+  background-color: #e1f0ff;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+.custom-user-table td {
+  text-align: center;
+  padding: 0.5rem;
+}
+.pop-table th {
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: transparent !important;
+}
+.pop-table table thead {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  padding: 5px;
+}
+.pop-table table tbody td {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+
+.points {
+  border-top: 1px solid blue;
+}
+.total-pts {
+  padding: 0;
+  border-bottom: 1px solid gray;
+  padding: 10px 0px;
+}
+.total-pts h2 {
+  flex: 1;
+  font-size: 1.5rem;
+}
+
+.pinsection-modal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.pin-sec {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.firstbox-pin {
+  width: 25%;
+  margin-right: 4px;
+}
+
+.secondbox-pin {
+  width: 25%;
+  margin-right: 4px;
+}
+
+.thirdbox-pin {
+  width: 25%;
+  margin-right: 2px;
+}
+
+.fourthbox-pin {
+  width: 25%;
+  margin-left: 2px;
+}
+.stud-man-container {
+  display: flex;
+  justify-content: space-between;
+}
+.download-container {
+  display: flex;
+  gap: 20px;
+}
+.download-container button {
+  padding: 0.5em 1rem;
+  font-size: 1.3rem;
+  background-color: #fff;
+  color: #2880bf;
+  border: 1px solid #2880bf;
+}
+.stud-import {
+  display: flex;
+
+  align-items: center;
+  gap: 5px;
+}
+.stud-import i {
+  color: #2880bf;
+}
+.download-container button:hover,
+.download-container button:hover i {
+  background-color: #2880bf;
+  color: #fff;
+}
+
+label, .user-modal-form{
+  font-size: 14px;
+}
+
+.show {
+  position: absolute;
+  right: 20px;
+  bottom: 35px;
+}
+

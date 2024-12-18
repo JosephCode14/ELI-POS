@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.sidebar {
+  width: 15%;
+  height: 100%;
+  background-color: #283042;
+  color: white;
+  font-family:'Poppins', sans-serif;
+  font-weight: 300;
+  margin-left: 0px;
+  margin-left: 0px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #34495e;
+}
+
+.header img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-icon {
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+.menu {
+  list-style: none;
+  text-align: left;
+  border-top: #A1A8B1;
+  overflow-y: auto;
+  height: calc(86vh);
+}
+
+.menu li {
+  padding: 20px 10px; /* Change this to '10px 0px 10px 0px' if needed */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  list-style-type: none;
+
+}
+
+
+.menu li:hover {
+  background-color: #3B4D61;
+}
+
+.dropdown {
+  padding-left: 30px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.dropdown.expanded {
+  max-height: 100%; /* Adjust this value as needed */
+}
+.sub-dropdown {
+  padding-left: 40px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.sub-dropdown.expanded {
+  max-height: 1000px; /* Adjust this value as needed */
+}
+
+.sub-dropdown li {
+  padding: 10px 0;
+}
+
+.module{
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #ffffff;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.module .logout-1{
+
+height: 10rem;
+}
+.submodule {
+  background-color: #283042;
+  border-left: 2px solid #A1A8B1;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #ffffff;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.nest-submodule {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #ffffff;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+submodstyle{
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #ffffff;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.nav-link{
+
+
+  color: #ffffff;
+  text-decoration: none;
+  
+  
+}
